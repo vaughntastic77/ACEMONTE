@@ -69,7 +69,7 @@ class LoadSection:
         label.pack()
 
 class Run_Section:
-    def __init__(self, master, title,xvar,yvars):
+    def __init__(self, master, title,xvar = '',yvars = ''):
         self.master = master
         self.title = title
 
@@ -287,3 +287,6 @@ def launch(xvar = 'P01', yvars = 'Re(P)'):
 
     # Start the Tkinter event loop
     root.mainloop()
+
+if __name__ == '__main__':
+    launch()
